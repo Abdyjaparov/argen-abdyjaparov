@@ -1,0 +1,55 @@
+.contact-info {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+/* Стили для всего баннера */
+.banner {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Градиент */
+    color: white; /* Цвет текста */
+    padding: 20px; /* Отступы */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    border-radius: 5px; /* Закругленные углы */
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Пробел между содержимым */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+/* Стили для кнопки закрытия */
+.banner button {
+    background: transparent; /* Прозрачный фон */
+    border: 2px solid white; /* Белая рамка */
+    color: white; /* Цвет текста */
+    padding: 5px 10px; /* Отступы */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель курсора */
+    transition: background 0.3s, color 0.3s; /* Плавный переход */
+}
+
+/* Эффект при наведении на кнопку */
+.banner button:hover {
+    background: white; /* Белый фон при наведении */
+    color: #2193b0; /* Цвет текста при наведении */
+}
+
+/* Стили для контактной информации */
+.contact-info {
+    font-size: 20px; /* Размер шрифта */
+    display: flex; /* Используем flexbox */
+    align-items: center; /* Вертикальное выравнивание */
+    margin: 15px 0; /* Отступы */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Серая рамка */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background 0.3s; /* Плавный переход для фона */
+}
+
+/* Эффект при наведении на контактную информацию */
+.contact-info:hover {
+    background: #f0f8ff; /* Легкий фон при наведении */
+}

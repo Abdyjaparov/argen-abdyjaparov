@@ -1,0 +1,120 @@
+/* Общий стиль контейнера */
+.container.about-page {
+    padding: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f2f5f7;
+    color: #1a1a1a;
+    font-family: 'Georgia', serif;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль заголовков */
+.container.about-page h1,
+.team h2 {
+    font-size: 40px;
+    color: #1e3a5f;
+    text-transform: uppercase;
+    border-bottom: 3px solid #1e3a5f;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Изображение */
+.image2 {
+    width: 200px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px auto 30px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.image2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Текст */
+.container.about-page p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Секция команды */
+.team {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 34px;
+    color: #1e3a5f;
+    font-weight: 700;
+}
+
+/* Карточки участников */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    background: linear-gradient(145deg, #e6e8eb, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    transform: perspective(1px) translateZ(0);
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    font-size: 24px;
+    color: #2a506f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Добавление эффекта блика */
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: -75%;
+    left: -75%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.7s ease;
+}
+
+.team-member:hover::before {
+    top: -200%;
+    left: -200%;
+    transition: all 0.7s ease;
+}
+

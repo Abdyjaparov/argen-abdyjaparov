@@ -1,0 +1,47 @@
+/* Основные стили для контейнера */
+.retelling {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.about-my {
+    margin-bottom: 40px;
+}
+
+/* Стили заголовков */
+.about-my h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #4a90e2;
+}
+
+.about-my h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Стили изображения */
+.image1 {
+    width: 200px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    border-radius: 8px;
+    margin: 20px 0; /* Отступы сверху и снизу */
+    float: left; /* Выравнивание изображения по левому краю текста */
+    margin-right: 20px; /* Отступ справа от изображения */
+}
+
+/* Тень для изображения */
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Дополнительный стиль для интересных фактов */
+.o-sebe {
+    font-weight: 300;
+    font-style: italic;
+}
