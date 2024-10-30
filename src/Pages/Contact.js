@@ -11,9 +11,6 @@ const Contact = () => {
         setShowBanner(true); // Показать баннер при монтировании компонента
     }, []);
 
-    const handleCloseBanner = () => {
-        setShowBanner(false); // Скрыть баннер при нажатии на кнопку
-    };
 
     // Функция для копирования текста в буфер обмена
     const copyToClipboard = (text) => {
