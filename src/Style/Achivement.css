@@ -1,25 +1,71 @@
-/*Основной стиль для Achivement */
-main {
-    background-color: #f0f4f8; /* Светлый фон для контраста */
-    padding: 40px 60px; /* Отступы для удобства чтения */
-    border-radius: 10px; /* Скругленные углы */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+/* Основной контейнер для достижений */
+.achievements-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Заголовки первого уровня */
-h1 {
-    font-size: 32px; /* Размер шрифта заголовка */
-    color: #1e3a5f; /* Цвет заголовка */
-    margin-bottom: 20px; /* Отступ снизу */
-    border-bottom: 2px solid #4a90e2; /* Подчеркивание */
-    padding-bottom: 10px; /* Отступ снизу заголовка */
+/* Заголовки основных секций */
+.achievements-container h1 {
+    font-size: 32px;
+    color: #1e3a5f;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+    position: relative;
 }
 
-/* Заголовки второго уровня */
-h3 {
-    font-size: 18px; /* Размер шрифта для подзаголовков */
-    color: #333; /* Цвет текста */
-    margin-bottom: 15px; /* Отступ снизу */
-    line-height: 1.6; /* Высота строки для читаемости */
+.achievements-container h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #1e3a5f;
+    margin: 10px auto 0;
+    border-radius: 5px;
 }
 
+/* Описание достижений */
+.achievements-container h3 {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 4px solid #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.achievements-container h3:hover {
+    background-color: #f1f5fa; /* Легкий эффект при наведении */
+}
+
+/* Блоки для отдельных достижений */
+.achievement-section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+/* Отступы для мобильных устройств */
+@media (max-width: 768px) {
+    .achievements-container {
+        padding: 20px;
+    }
+    
+    .achievements-container h1 {
+        font-size: 28px;
+    }
+
+    .achievements-container h3 {
+        font-size: 16px;
+    }
+}

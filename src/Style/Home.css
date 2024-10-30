@@ -1,120 +1,97 @@
-/* Общий стиль контейнера */
+/* Основной контейнер */
 .container.about-page {
-    padding: 60px;
-    max-width: 900px;
+    background-color: #f9fafb; /* Легкий фон для общего контейнера */
+    padding: 40px 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #f2f5f7;
-    color: #1a1a1a;
-    font-family: 'Georgia', serif;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Стиль заголовков */
-.container.about-page h1,
-.team h2 {
-    font-size: 40px;
+/* Заголовок страницы */
+.container.about-page h1 {
+    font-size: 36px;
     color: #1e3a5f;
-    text-transform: uppercase;
-    border-bottom: 3px solid #1e3a5f;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-weight: bold;
     text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
 }
 
 /* Изображение */
 .image2 {
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 10%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    margin: 20px auto 30px;
     display: block;
-    transition: transform 0.5s ease;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
 
 .image2:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05); /* Легкое увеличение при наведении */
 }
 
-/* Текст */
+/* Основной текст */
 .container.about-page p {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 18px;
     color: #333;
-    margin-bottom: 40px;
     text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Секция команды */
 .team {
-    margin-top: 60px;
-    text-align: center;
+    margin-top: 40px;
 }
 
 .team h2 {
-    font-size: 34px;
+    font-size: 28px;
     color: #1e3a5f;
-    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
 }
 
 /* Карточки участников */
 .team-members {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    gap: 20px;
 }
 
 .team-member {
-    background: linear-gradient(145deg, #e6e8eb, #ffffff);
-    padding: 30px;
-    border-radius: 15px;
-    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 200px;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    transform: perspective(1px) translateZ(0);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-member:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Легкое поднятие при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* Имя участника */
 .team-member h3 {
-    font-size: 24px;
-    color: #2a506f;
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-size: 20px;
+    color: #1e3a5f;
+    margin-bottom: 5px;
 }
 
+/* Должность участника */
 .team-member p {
-    font-size: 18px;
-    color: #555;
-    font-style: italic;
+    font-size: 16px;
+    color: #666;
+    margin: 0;
 }
-
-/* Добавление эффекта блика */
-.team-member::before {
-    content: '';
-    position: absolute;
-    top: -75%;
-    left: -75%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(45deg);
-    transition: all 0.7s ease;
-}
-
-.team-member:hover::before {
-    top: -200%;
-    left: -200%;
-    transition: all 0.7s ease;
-}
-
