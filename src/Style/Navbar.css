@@ -1,4 +1,4 @@
-/* Общий стиль навбара */
+
 .navbar {
     display: flex;
     align-items: center;
@@ -11,7 +11,6 @@
     color: #ffffff;
 }
 
-/* Заголовок в навбаре */
 .navbar h1 {
     font-size: 32px;
     color: #f2f5f7;
@@ -24,7 +23,7 @@
     color: #4a90e2;
 }
 
-/* Ссылки в навбаре */
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -43,7 +42,6 @@
     transform: translateY(-2px);
 }
 
-/* Подчеркнутый эффект при наведении */
 .nav-links a::after {
     content: '';
     display: block;
@@ -57,7 +55,7 @@
 .nav-links a:hover::after {
     width: 100%;
 }
-/* Navbar.css */
+
 
 .navbar {
     display: flex;
@@ -72,13 +70,11 @@
     gap: 20px;
 }
 
-/* Стили для маленьких экранов */
 @media (max-width: 576px) {
     .navbar h1 {
         font-size: 1.5rem;
     }
 
-    /* Скроем ссылки на мобильных и добавим гамбургер */
     .nav-links {
         display: none;
     }
@@ -89,7 +85,6 @@
         cursor: pointer;
     }
 }
-/* Navbar.css */
 
 .nav-links.open {
     display: flex;

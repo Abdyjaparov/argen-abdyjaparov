@@ -38,13 +38,13 @@
 }
 
 
-/* App.css */
-.container {
+/* App.css 
+ .container {
   width: 90%;
   padding: 2%;
 }
 
-/* Медиа-запрос для телефонов */
+Медиа-запрос для телефонов
 @media (max-width: 576px) {
   .navbar h1 {
       font-size: 1.5rem;
@@ -53,4 +53,4 @@
       width: 100%;
       height: auto;
   }
-}
+} */

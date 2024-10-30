@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <Link to="/" onClick={toggleMenu}>Home</Link>
-                <Link to="/achievements" onClick={toggleMenu}>Achievement</Link>
+                <Link to="/achivement" onClick={toggleMenu}>Achivement</Link>
                 <Link to="/projects" onClick={toggleMenu}>Projects</Link>
                 <Link to="/about" onClick={toggleMenu}>About</Link>
             </div>
