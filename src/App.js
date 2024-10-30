@@ -7,6 +7,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Achivement from './Pages/Achivement';
 import Projects from './Pages/Projects';
+import './App.css';
 import './Style/About.css';
 import './Style/Home.css';
 import './Style/Novbar.css';
