@@ -10,12 +10,10 @@ import Projects from './Pages/Projects';
 import './App.css';
 import './Style/About.css';
 import './Style/Home.css';
-import './Style/Novbar.css';
+import './Style/Navbar.css';
 import './Style/Footer.css';
 import './Style/Achivement.css';
 import './Style/Projects.css';
-
-
 
 
 
